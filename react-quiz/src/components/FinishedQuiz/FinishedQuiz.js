@@ -2,6 +2,7 @@ import React from "react";
 import classes from './FinishedQuiz.module.css';
 import Button from "../UI/Button/Button";
 import 'font-awesome/css/font-awesome.min.css'
+import {Link} from "react-router-dom";
 
 const FinishedQuiz = props => {
     const successCount = Object.keys(props.results).reduce((total, current) => {
@@ -33,7 +34,8 @@ const FinishedQuiz = props => {
             <p>Right answers {successCount} from {props.quiz.length} </p>
             <div>
                 <Button onClick={props.onRetry} type='primary'>Repeat</Button>
-                <Button type='primary'>Go to test list</Button>
+                <Link to='/'><Button type='success'>Go to test list</Button></Link>
+
             </div>
         </div>
     );

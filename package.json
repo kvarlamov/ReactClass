@@ -1,6 +1,8 @@
 {
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.1.1",
     "@fortawesome/free-solid-svg-icons": "^6.1.1",
+    "axios": "^0.27.2",
     "font-awesome": "^4.7.0",
     "prop-types": "^15.8.1"
   }
